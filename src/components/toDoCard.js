@@ -26,7 +26,7 @@ export default props => {
     const renderToDoCard = _ => {
         if (completed) {
             return(
-                <div className="card toDoCard mb-1 bg-success">
+                <div className="card toDoCard mb-2 bg-dark">
                     <div className="card-body text-light">
                         <div className='form-check form-check-inline'>
                             <input className="form-check-input toDoCard-button" type="checkbox" 
@@ -42,7 +42,7 @@ export default props => {
             );
         } else {
             return(
-                <div className="card toDoCard mb-1">
+                <div className="card toDoCard mb-2">
                     <div className="card-body">
                         <div className='form-check form-check-inline'>
                             <input className="form-check-input toDoCard-button" type="checkbox" 
