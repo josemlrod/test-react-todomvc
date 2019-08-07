@@ -2,17 +2,12 @@ import React, { useEffect, } from 'react';
 
 export default props => {
     const { task, idx, setToDos, completed, toDos } = props;
-
-    useEffect(_ => {
-        console.log('completed changed: ', completed)
-        renderToDoCard();
-    }, [toDos[idx]])
-
     const handleCompleted = e => {
         const toDoIdx = parseInt(e.target.title);
         setToDos(prevToDos => {
-            prevToDos[toDoIdx].completed = true;
-            return prevToDos;
+            const newToDoArr = [...prevToDos];
+            newToDoArr[toDoIdx].setCompleted();
+            return newToDoArr;
         });
     };
     const handleDelete = e => {

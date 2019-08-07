@@ -5,7 +5,7 @@ class ToDoItem {
     };
 
     setCompleted() {
-        this.completed = true;
+        this.completed = !this.completed;
     };
 };
 
