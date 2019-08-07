@@ -3,7 +3,7 @@ import React from 'react';
 import ToDoCard from '../components/toDoCard';
 
 export default props => {
-    const { toDos, } = props;
+    const { toDos, setToDos } = props;
     return(
         <>
             <div className='container my-3 px-0 py-3'>
@@ -11,7 +11,8 @@ export default props => {
                     (!toDos.length) ? 
                         null
                     :
-                        toDos.map((e, i) => <ToDoCard key={i} task={e.task} />)
+                        toDos.map((e, i) => <ToDoCard key={ i } task={ e.task } 
+                            idx={ i } setToDos={ setToDos } />)
                 }
             </div>
         </>
