@@ -11,11 +11,9 @@ export default props => {
     const addToDo = toDoItem => 
         setToDos(prevToDos => prevToDos.concat([toDoItem,]));
 
-    console.log(toDos)
-
     return(
         <>
-            <Header />
+            <Header toDos={toDos} />
             <div className='container'>
                 <Input addToDo={addToDo} input={input} setInput={setInput} />
                 <ToDoHolder toDos={toDos} setToDos={setToDos} />
