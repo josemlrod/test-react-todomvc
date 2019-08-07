@@ -16,7 +16,7 @@ export default props => {
             <Header />
             <div className='container'>
                 <Input addToDo={addToDo} input={input} setInput={setInput} />
-                <ToDoHolder />
+                <ToDoHolder toDos={toDos} />
             </div>
         </>
     )

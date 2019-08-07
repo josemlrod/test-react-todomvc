@@ -3,10 +3,16 @@ import React from 'react';
 import ToDoCard from '../components/toDoCard';
 
 export default props => {
+    const { toDos, } = props;
     return(
         <>
             <div className='container my-3 px-0 py-3'>
-                <ToDoCard />
+                {
+                    (!toDos.length) ? 
+                        null
+                    :
+                        toDos.map((e, i) => <ToDoCard key={i} task={e.task} />)
+                }
             </div>
         </>
     )
