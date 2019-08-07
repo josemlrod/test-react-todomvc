@@ -1,4 +1,4 @@
-class ToDo {
+class ToDoItem {
     constructor(task) {
         this.task = task;
         this.completed = false;
@@ -9,4 +9,4 @@ class ToDo {
     };
 };
 
-export default ToDo;
+export default ToDoItem;
