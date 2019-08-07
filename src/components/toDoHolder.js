@@ -12,7 +12,7 @@ export default props => {
                         null
                     :
                         toDos.map((e, i) => <ToDoCard key={ i } task={ e.task } 
-                            idx={ i } setToDos={ setToDos } />)
+                            idx={ i } setToDos={ setToDos } toDos={ toDos } />)
                 }
             </div>
         </>
