@@ -1,4 +1,4 @@
-import React, { useEffect, } from 'react';
+import React from 'react';
 
 export default props => {
     const { task, idx, setToDos, completed, toDos } = props;
@@ -21,8 +21,7 @@ export default props => {
             };
             return newToDosArr;
         });
-    };
-    
+    };    
     const renderToDoCard = _ => {
         if (completed) {
             return(
@@ -57,7 +56,7 @@ export default props => {
                 </div>
             );
         };
-    }
+    };
 
     return(
         <>

@@ -19,5 +19,5 @@ export default props => {
                 <ToDoHolder toDos={toDos} setToDos={setToDos} />
             </div>
         </>
-    )
-}
+    );
+};
