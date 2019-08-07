@@ -1,0 +1,7 @@
+.toDoCard:hover .toDoCard-button {
+  display: block;
+}
+
+.toDoCard-button {
+  display: none;
+}
